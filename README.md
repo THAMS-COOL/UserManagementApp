@@ -4,7 +4,8 @@ Build an User Management Application
 Used Dependencies:
 
 Spring Security - To Authentication/Authorization
-Spring Data JPA 
+Spring Data JPA
+Lombok
 
 DB:
 posgresql
@@ -17,6 +18,10 @@ http:localhost:9091/api/v1/user/registration Method: POST
 
 // To Store the password -- Used BCrypt
 // To store token -- Used UUID (Instead of JWT)  
+
+Token Confirmation: // Once the token is confirmed, the user is enabled and can Login into the application
+
+localhost:9091/api/v1/registration/confirm?token=b02fa8cc-4720-4b7e-9594-e7c7639169be Method: GET
 
 GET all the users
 
